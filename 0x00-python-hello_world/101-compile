@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Compiling main.py ...
+./my_main.py > my_main.pyc
