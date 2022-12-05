@@ -4,7 +4,7 @@ def islower(c):
     lst = list(a)
     b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     lsa = list(b)
-    if c in lst:
+    if (c) in lst:
         return True
-    elif c in lsa:
+    elif (c) in lsa:
         return False
