@@ -3,7 +3,7 @@ def fizzbuzz():
     for i in range(1, 101):
         fizz = 'Fizz'
         buzz = 'Buzz'
-        fizzbuzz= 'FizzBuzz'
+        fizzbuzzo = 'FizzBuzz'
 
         if ((i % 3) == 0) and ((i % 5) == 0):
             print('{}'.format(fizzbuzz), end=" ")
