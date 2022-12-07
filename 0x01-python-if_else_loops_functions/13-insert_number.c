@@ -13,6 +13,8 @@ listint_t *insert_node(listint_t **head, int number)
 	
     listint_t *new;
     listint_t *current;
+    listint_t *temp;
+    size_t i;
 
     current = *head;
 
@@ -21,15 +23,17 @@ listint_t *insert_node(listint_t **head, int number)
         return (NULL);
 
     new->n = number;
-    new->next = NULL;
+    /*new->next = ->next;*/
 
     if (*head == NULL)
         *head = new;
     else
     {
-        while (current->next != NULL)
+        for (i = 0; i <= 3; i++)
             current = current->next;
+	temp = current->next;
         current->next = new;
+	new->next = temp;
     }
 
     return (new);
