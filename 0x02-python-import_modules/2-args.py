@@ -1,21 +1,14 @@
 #!/usr/bin/python3
 import sys
  
-# total arguments
-n = len(sys.argv)
-print("Total arguments passed: {}".format(n))
- 
-# Arguments passed
-print("\nName of Python script: {}".format(sys.argv[0])
- 
-print("\nArguments passed:", end = " ")
-for i in range(1, n):
-    print('{}'.format(sys.argv[i]), end = " ")
-     
-# Addition of numbers
-Sum = 0
-# Using argparse module
-for i in range(1, n):
-    Sum += int(sys.argv[i])
-     
-print("\n\nResult:", Sum)
+if __name__ == "__main__":
+    n = len(sys.argv)
+    if n < 2:
+        print('0 arguments.')
+    if n == 2:
+        print('1 argument:')
+        print('1: {}'.format(sys.argv[1]))
+    if n > 2:
+        print('{} arguments:'.format(n-1))
+        for i in range(1, n):
+            print('{}: {}'.format(i, sys.argv[i]))
