@@ -1,2 +1,2 @@
 # alx-higher_level_programming
-Journey into the high level programming language 
+Journey into the high level programming language, and exploring new possibilities with the tool PYTHON...

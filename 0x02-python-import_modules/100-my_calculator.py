@@ -10,7 +10,7 @@ if __name__ == "__main__":
         a = int(argv[1])
         b = int(argv[3])
         c = add(a, b)
-        print('{} {} {} = {}'.format(a, argv[2], b, c)
+        print('{} {} {} = {}'.format(a, argv[2], b, c))
     elif argv[2] == '-':
         a = int(argv[1])
         b = int(argv[3])
