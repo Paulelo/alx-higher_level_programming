@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
     new_list = []
     for i in a_dictionary:
