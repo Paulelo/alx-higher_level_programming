@@ -9,11 +9,12 @@ def safe_print_list(my_list=[], x=0):
             for i in range(0, h):
                 print(my_list[i], end='')
                 j += 1
+            print()
         else:
             for i in range(0, x):
                 print(my_list[i], end='')
                 j += 1
-            print('\n')
+            print()
     except TypeError:
         print("Pls check your code an error has occured")
     else:
