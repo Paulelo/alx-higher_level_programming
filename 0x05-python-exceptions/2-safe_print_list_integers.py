@@ -14,14 +14,14 @@ def safe_print_list_integers(my_list=[], x=0):
             h += 1
         if x == h:
             for i in a_list:
-                print(i, end='')
+                print('{:d}'.format(i), end='')
                 j += 1
-            print('\n')
+            print()
         else:
             for i in range(0, x):
-                print(a_list[i], end='')
+                print('{:d}'.format(a_list[i]), end='')
                 j += 1
-            print('\n')
+            print()
     except TypeError:
         print("Pls check your code an error has occured")
     else:
