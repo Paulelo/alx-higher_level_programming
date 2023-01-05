@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
     try:
-        h = 0 
+        h = 0
         j = 0
         a_list = []
         b_list = []
-        for l in my_list:
-            if isinstance(l, int):
-                a_list.append(l)
+        for i in my_list:
+            if isinstance(i, int):
+                a_list.append(i)
             else:
-                b_list.append(l)
+                b_list.append(i)
         for k in my_list:
             h += 1
         if x == h:
