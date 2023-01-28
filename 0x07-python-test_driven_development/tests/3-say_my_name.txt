@@ -1,0 +1,33 @@
+===============================================
+Test for function/functions in 3-say_my_name.py
+===============================================
+
+============
+Regular test
+============
+
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Bob", "Lenon")
+    My name is Bob Lenon
+
+==============
+Only First arg
+==============
+
+::
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+===============
+Arg of type int
+===============
+
+::
+    >>> say_my_name("Bob", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name(12, "Lenon")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
