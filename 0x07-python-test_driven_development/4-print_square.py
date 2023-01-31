@@ -2,6 +2,7 @@
 """A module that prints
 a square"""
 
+
 def print_square(size):
     """This fuction takes only
     one arg and use it to print a square"""
