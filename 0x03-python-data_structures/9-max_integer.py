@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 def max_integer(my_list=[]):
     i = len(my_list)
     c = my_list[0]
