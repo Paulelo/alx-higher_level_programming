@@ -1,3 +1,3 @@
 -- Hmm... deleting a database
-DELETE DATABASE hbtn_0c_0;
+DROP DATABASE hbtn_0c_0;
 
