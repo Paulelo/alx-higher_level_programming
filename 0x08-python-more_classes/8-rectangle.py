@@ -9,9 +9,14 @@ class Rectangle:
        defines a retangle
        returing its area
        and perimeter"""
+    number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
+        Rectangle.print_symbol = self.print_symbol
 
     @property
     def height(self):
@@ -52,10 +57,25 @@ class Rectangle:
         else:
             return ((a * 2) + (b * 2))
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if rect_1.print_symbol != "#":
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        elif rect_2.print_symbol != "#":
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        elif rect_1.area() > rect_2.area():
+            return (rect_1)
+        elif rect_2.area() > rect_1.area():
+            return (rect_2)
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ('')
-        return ('\n'.join(['#' * self.width] * self.height))
+        return ('\n'.join([f'{self.print_symbol}' * self.width] * self.height))
 
     def __repr__(self):
         return (f'Rectangle({self.width}, {self.height})')
+
+    def __del__(self):
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
