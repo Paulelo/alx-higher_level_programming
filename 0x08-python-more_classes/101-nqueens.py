@@ -46,7 +46,7 @@ def is_valid(board, row, col):
 
 
 if len(sys.argv) > 2 or len(sys.argv) < 2:
-    print("Usage: nqueens N\n")
+    print("Usage: nqueens N")
     exit(1)
 else:
     try:
