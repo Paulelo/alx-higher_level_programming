@@ -1,6 +1,8 @@
 0-add_integer.txt test module
 =============================
 
+>>> add_integer = __import__('0-add_integer').add_integer
+
 a and b must be integers or floats
 ----------------------------------
 

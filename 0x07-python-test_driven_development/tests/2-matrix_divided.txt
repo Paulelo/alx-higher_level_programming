@@ -1,0 +1,35 @@
+2-matrix_divided.txt tests module
+=================================
+
+>>> matrix_divide = __import__('2-matrix_divided').matrix_divided
+
+matrix is a lists of ints or floats
+-----------------------------------
+
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divide(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+>>> matrix1 = [[1, 2, 3], ['a', 5, 6]]
+>>> matrix_divide(matrix1, 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix2 = [[1, 2, 3], [4, 5, 6, 7]]
+>>> matrix_divide(matrix2, 3)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divide(matrix, 'b')
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+>>> matrix_divide(matrix, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+
+ 
