@@ -1,6 +1,14 @@
 #!/usr/bin/python3
+"""
+   matrix list: numbers to be divided
+   div: number to divide matrix
+   Returns: new divided list
+"""
 
 def matrix_divided(matrix, div):
+    """
+    function to divide matrix
+    """
     for p in matrix:
         if type(p) not in [list]:
             raise TypeError("matrix must be a matrix (list of lists) of integers/floats")

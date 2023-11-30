@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-"""Module with function that adds"""
+"""
+   a int: The first integer
+   b int: The second integer
+   Returns: sum of a and b as int
+"""
 def add_integer(a, b=98):
-    """A function that adds 2 integers."""
+    """
+    A function that adds 2 integers.
+    """
     if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
     if type(b) not in [int, float]:

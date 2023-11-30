@@ -1,0 +1,16 @@
+5-text_indentation.txt test module
+==================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test cases
+----------
+
+>>> words = "Oh God please let me not be entangled, let nothing: i mean nothing. Why shld i fall?"
+>>> text_indentation(words)
+Oh God please let me not be entangled, let nothing:
+<BLANKLINE>
+ i mean nothing.
+<BLANKLINE>
+ Why shld i fall?
+<BLANKLINE>
