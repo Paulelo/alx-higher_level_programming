@@ -16,3 +16,18 @@ class TestMaxInteger(unittest.TestCase):
     def test_equalist(self):
         result = max_integer([1, 1, 1, 1])
         self.assertEqual(result, 1)
+    def test_maxAtEndOfList(self):
+        result = max_integer([8, 3, 5, 6, 7])
+        self.assertEqual(result, 8)
+    def test_maxInMiddle(self):
+        result = max_integer([1, 1, 2, 1, 0])
+        self.assertEqual(result, 2)
+    def test_oneNegNumInList(self):
+        result = max_integer([1, -1, 1, 3])
+        self.assertEqual(result, 3)
+    def test_listOfNegNum(self):
+        result = max_integer([-2, -1, -4, -3])
+        self.assertEqual(result, -1)
+    def test_listWithOneEle(self):
+        result = max_integer([1])
+        self.assertEqual(result, 1)
