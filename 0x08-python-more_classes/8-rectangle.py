@@ -3,6 +3,7 @@
    rectangle and does nothing
 """
 
+
 class Rectangle:
     """Define a rectangle"""
 
@@ -12,7 +13,6 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        #Rectangle.number_of_instances = number_of_instances
         Rectangle.number_of_instances += 1
 
     @property
@@ -43,9 +43,9 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if isinstance(rect_1, Rectangle) == False:
+        if isinstance(rect_1, Rectangle) is False:
             raise TypeError("rect_1 must be an instance of Rectangle")
-        elif isinstance(rect_2, Rectangle) == False:
+        elif isinstance(rect_2, Rectangle) is False:
             raise TypeError("rect_2 must be an instance of Rectangle")
         else:
             if rect_1.area() == rect_2.area():
@@ -55,7 +55,6 @@ class Rectangle:
             else:
                 return rect_1
 
-
     def area(self):
         return self.__height * self.__width
 
@@ -63,10 +62,11 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        return('\n'.join([str(self.print_symbol) * self.__width] * self.__height))
+        return ('\n'.join([str(self.print_symbol)*self.__width]*self.__height))
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + " " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.__width)\
+               + "," + " " + str(self.__height) + ")"
 
     def __del__(self):
         print("Bye rectangle" + '.' + '.' + '.')

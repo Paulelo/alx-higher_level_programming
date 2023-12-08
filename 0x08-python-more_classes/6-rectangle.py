@@ -3,6 +3,7 @@
    rectangle and does nothing
 """
 
+
 class Rectangle:
     """Define a rectangle"""
 
@@ -11,7 +12,6 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        #Rectangle.number_of_instances = number_of_instances
         Rectangle.number_of_instances += 1
 
     @property
@@ -47,10 +47,11 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        return('\n'.join(['#' * self.__width] * self.__height))
+        return ('\n'.join(['#' * self.__width] * self.__height))
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + " " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.__width)\
+               + "," + " " + str(self.__height) + ")"
 
     def __del__(self):
         print("Bye rectangle" + '.' + '.' + '.')

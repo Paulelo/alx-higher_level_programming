@@ -3,6 +3,7 @@
    rectangle and does nothing
 """
 
+
 class Rectangle:
     """Define a rectangle"""
 
@@ -43,4 +44,4 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        return('\n'.join(['#' * self.__width] * self.__height))
+        return ('\n'.join(['#' * self.__width] * self.__height))

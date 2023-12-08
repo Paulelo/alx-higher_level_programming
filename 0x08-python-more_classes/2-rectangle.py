@@ -3,6 +3,7 @@
    rectangle and does nothing
 """
 
+
 class Rectangle:
     """Define a rectangle"""
 

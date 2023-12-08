@@ -3,7 +3,9 @@
    rectangle and does nothing
 """
 
+
 class Rectangle:
+
     """Define a rectangle"""
 
     def __init__(self, width=0, height=0):
@@ -43,7 +45,8 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        return('\n'.join(['#' * self.__width] * self.__height))
+        return ('\n'.join(['#' * self.__width] * self.__height))
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + " " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.__width) \
+               + "," + " " + str(self.__height) + ")"
