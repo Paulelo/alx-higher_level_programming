@@ -1,0 +1,24 @@
+7-base_geometry.txt test module
+===============================
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test Cases
+----------
+>>> geo_1 = BaseGeometry()
+>>> geo_1.area()
+Traceback (most recent call last):
+	...
+Exception: area() is not implemented
+
+>>> geo_2 = BaseGeometry()
+>>> geo_2.integer_validator('age', -1)
+Traceback (most recent call last):
+	...
+ValueError: age must be greater than 0
+
+>>> geo_3 = BaseGeometry()
+>>> geo_3.integer_validator('name', [1, 2])
+Traceback (most recent call last):
+	...
+TypeError: name must be an integer
