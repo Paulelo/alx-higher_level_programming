@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-"""
-Your module's verbose yet thorough docstring.
-
-Public instance method: def lookup(self): that returns sorted list
-No module was imported"""
+"""Retruns the list of available attr"""
 
 
 def lookup(obj):
-	"""Return a list of an object's available attributes."""
+	"""Return a list of an object's available attributes.
+
+	Args:
+		obj (any): The object to check
+	Returns:
+		List 
+	"""
     return sorted(dir(obj))
