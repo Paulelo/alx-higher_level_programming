@@ -3,11 +3,11 @@
 
 
 def lookup(obj):
-	"""Return a list of an object's available attributes.
+    """Return a list of an object's available attributes.
 
-	Args:
-		obj (any): The object to check
-	Returns:
-		List 
-	"""
-	return sorted(dir(obj))
+    Args:
+        obj (any): The object to check
+    Returns:
+        List
+    """
+    return sorted(dir(obj))
