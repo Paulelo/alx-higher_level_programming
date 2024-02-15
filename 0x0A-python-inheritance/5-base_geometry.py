@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""A class that does nothing"""
+
 
 class BaseGeometry:
-	pass
+    """A class that does nothing"""
+    pass
